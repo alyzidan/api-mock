@@ -6,4 +6,6 @@ const port = process.env.port || 3333
 
 server.use(middlewares)
 server.use(router)
-server.listen(port)
+server.listen(port,() => console.log(
+      'Lesting to app port 3333'
+))
